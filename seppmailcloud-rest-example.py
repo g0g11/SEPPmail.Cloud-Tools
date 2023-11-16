@@ -140,7 +140,7 @@ if sc.login():
     #print(sc.api_request('version', params=None, retry=1, type='GET'))
 
     # Get the invoice of a partiuclar month, for all tenants
-    output = sc.api_request('salesorders?time_start=2023-1-1', params=None, retry=1, type='GET')
+    output = sc.api_request('salesorders?date_start=2023-1-1', params=None, retry=1, type='GET')
 
     # Format as JSON; in this example, we just dump it to STDOUT
     j = json.loads(output)
